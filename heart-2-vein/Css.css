@@ -1,0 +1,86 @@
+/* Reset basic margins */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+  /* EKG pulse background, repeating horizontally */
+  background: url('https://media.istockphoto.com/id/1160037261/photo/red-ekg-on-black-background.jpg?s=612x612&w=0&k=20&c=QGdSagZ_vq4NwJtT-kAJ5uldPphc-IgMit6CrnjorDA=') repeat-x center center;
+  background-size: auto 100%;
+  background-attachment: fixed;
+
+  /* Animate background moving LEFT TO RIGHT */
+  animation: movePulse 10s linear infinite;
+
+  /* Default text color */
+  color: #fff;
+}
+
+/* Animation: background moves left to right */
+@keyframes movePulse {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Form container centered on the screen */
+.form-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+/* Heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #f44336;
+}
+
+/* Input fields */
+.form-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #222;
+  color: #fff;
+}
+
+/* Button styling */
+.form-container .btn {
+  width: 100%;
+  background: #f44336;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-container .btn:hover {
+  background: #d32f2f;
+}
+
+/* Paragraph under the button */
+.form-container p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Links */
+.form-container a {
+  color: #f44336;
+  text-decoration: none;
+  font-weight: bold;
+}
